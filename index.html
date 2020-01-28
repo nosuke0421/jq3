@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <title>jQuery上級</title>
+  <link rel="stylesheet" href="ResetStylesheet.css">
+  <link rel="stylesheet" href="stylesheet.css">
+  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous">
+  </script>
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <header>
+    <div class="header-left">
+      <img class="icon" src="icon.png" alt="アイコン">
+      <p>エンジニアくま</p>
+    </div>
+  </header>
+
+
+  <div class="wrapper">
+    <h1>スライドの作成</h1>
+    <div class="message">
+      <p>jQueryを使って、ボタンを押すたびに画像が変わるスライドを作る。</p>
+      <p>以下が作成したスライド。</p>
+      <p>画像下のボタンか、スライド上のボタンによって画像が変わる。</p>
+    </div>
+    <div class="change-btns">
+      <div class="change-btn" id="prev-btn">
+        <p>←</p>
+      </div>
+      <div class="change-btn" id="next-btn">
+        <p>→</p>
+      </div>
+    </div>
+    <div class="slides">
+      <div class="slide active">
+        <img src="1.jpg" alt="">
+      </div>
+      <div class="slide">
+        <img src="2.jpg" alt="">
+      </div>
+      <div class="slide">
+        <img src="3.jpg" alt="">
+      </div>
+      <div class="select-btns">
+        <div class="select-btn"></div>
+        <div class="select-btn"></div>
+        <div class="select-btn"></div>
+      </div>
+    </div>
+
+
+    <h1>値の取得</h1>
+    <div class="message">
+      <p>.valやtext(),attr()などでいろいろな値をとることができる。</p>
+    </div>
+    <div class="sample">
+      <p>サンプルテキスト</p>
+      <a href="https:kumajournal.com">サンプルリンク</a>
+      <div class="sample_class">サンプルクラス</div>
+      <textarea class="sample_textarea" name="name" rows="4" cols="30">送信ボタンを押すと反映されます</textarea>
+      <div class="submit btn">
+        テキストエリア反映
+      </div>
+      <select class="sample_select" name="">
+        <option value="male">男</option>
+        <option value="female">女</option>
+        <option value="other">その他</option>
+      </select>
+      <div class="select_submit btn">
+        セレクトボックス反映
+      </div>
+      <div class="sample_btns">
+        <div class="male_btn btn">
+          男
+        </div>
+        <div class="female_btn btn">
+          女
+        </div>
+        <div class="other_btn btn">
+          その他
+        </div>
+      </div>
+    </div>
+
+    <h2>サンプルから参照したデータたち</h2>
+
+    <div class="out">
+      <div class="out_data">
+        <p>テキスト<span class="out_text"></span></p>
+        <p>リンク<span class="out_link"></span></p>
+        <p>クラス<span class="out_class"></span></p>
+        <p>テキストエリア<span class="out_textarea"></span></p>
+        <p>セレクト<span class="out_select"></span></p>
+
+
+      </div>
+    </div>
+
+    <h1>jQueryでアニメーション</h1>
+    <div class="message">
+      <p>animeteを使えばjQueryでもアニメーションができる</p>
+      <p>下のAにマウスを重ねてみてください</p>
+    </div>
+
+    <div class="anime_text">
+      A
+    </div>
+
+
+  </div>
+
+  <footer>
+    <p>2020/01/28</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
